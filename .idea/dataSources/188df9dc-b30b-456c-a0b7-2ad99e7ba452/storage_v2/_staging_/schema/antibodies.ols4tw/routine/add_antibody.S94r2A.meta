@@ -1,0 +1,2 @@
+#n:add_antibody
+#i:(varchar(200),varchar(100),varchar(150),varchar(100),varchar(10),varchar(15),varchar(250))
