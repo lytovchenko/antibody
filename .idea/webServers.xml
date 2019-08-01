@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="0bd240b1-5bde-4617-bd10-b7babff56545" name="https://github.com/lytovchenko/antibody" url="https://github.com/lytovchenko/antibody">
-        <fileTransfer host="https://github.com/lytovchenko/antibody" port="21">
+      <webServer id="0bd240b1-5bde-4617-bd10-b7babff56545" name="https://github.com/lytovchenko/antibody" url="http://github.com/lytovchenko/antibody.git">
+        <fileTransfer host="github.com/lytovchenko/antibody.git" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
           </advancedOptions>
