@@ -918,7 +918,7 @@
       <RoutineKind>procedure</RoutineKind>
     </routine>
     <routine id="232" parent="3" name="delete_order">
-      <SourceTextLength>71</SourceTextLength>
+      <SourceTextLength>51</SourceTextLength>
       <RoutineKind>procedure</RoutineKind>
     </routine>
     <routine id="233" parent="3" name="new_order">

@@ -35,7 +35,7 @@ public class SignInServlet extends HttpServlet {
 
         if (login.equals(lg) && password.equals(pwd)) {
 
-            RequestDispatcher rd = req.getRequestDispatcher("/home.jsp");
+            RequestDispatcher rd = req.getRequestDispatcher("/home.html");
             rd.forward(req, resp);
         } else {
             RequestDispatcher rd = req.getRequestDispatcher("/error.html");
