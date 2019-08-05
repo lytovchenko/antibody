@@ -62,11 +62,11 @@
                     <a class="dropdown-item" href="taqman.html">TaqMan probes</a>
                     <a class="dropdown-item" href="nitrogen.html">Liquid nitrogen</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="photos.html">Protocol book</a>
-                    <a class="dropdown-item" href="photos.html">Equipment manuals</a>
-                    <a class="dropdown-item" href="photos.html">Responsibility list</a>
+                    <a class="dropdown-item" href="other.html">Protocol book</a>
+                    <a class="dropdown-item" href="other.html">Equipment manuals</a>
+                    <a class="dropdown-item" href="other.html">Responsibility list</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="photos.html">Photos</a>
+                    <a class="dropdown-item" href="other.html">Photos</a>
                 </div>
             </li>
 
