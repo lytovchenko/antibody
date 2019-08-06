@@ -13,20 +13,19 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark my-3">
-    <a class="navbar-brand" href="index.html">Home</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="home.html">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-
             <li class="nav-item">
                 <a class="nav-link" href="calendar.html">Calendars</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="orders.html">Orders</a>
+                <a class="nav-link" href="order-list.jsp">Orders</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -36,27 +35,28 @@
                     Resources
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="antibody-list.jsp">Antibodies</a>
+                    <a class="dropdown-item" href="antibodies-html.html">Antibodies</a>
                     <a class="dropdown-item" href="taqman.html">TaqMan probes</a>
                     <a class="dropdown-item" href="nitrogen.html">Liquid nitrogen</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="other.html">Protocol book</a>
-                    <a class="dropdown-item" href="other.html">Equipment manuals</a>
-                    <a class="dropdown-item" href="other.html">Responsibility list</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="other.html">Photos</a>
+                    <a class="dropdown-item" href="other.html">Other files</a>
+                    <div class="dropdown-divider mobile-only"></div>
+                    <a href="index.html" class="btn btn-outline-light mobile-only">Sign out</a>
                 </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Other</a>
+                <a class="nav-link" href="other.html">Other</a>
             </li>
         </ul>
     </div>
+    <a href="index.html" class="btn btn-outline-light large-only">Sign out</a>
 </nav>
 
 <div class="container">
-    <h1>The page is coming soon</h1>
+    <br>
+    <h1 class="my-5">The page is coming soon</h1>
+    <br>
 </div>
 
 <footer class="pt-1 pt-md-1 border-top bg-dark">

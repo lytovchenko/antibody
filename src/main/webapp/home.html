@@ -14,6 +14,26 @@
     <!-- Custom CSS -->
     <style>
 
+        @media (max-width: 7500px) {
+            .large-only {
+                display: none;
+            }
+
+            .mobile-only {
+                display: block;
+            }
+        }
+
+        @media (min-width: 750px) {
+            .large-only {
+                display: block;
+            }
+
+            .mobile-only {
+                display: none;
+            }
+        }
+
         html,
         body,
         header,
@@ -80,15 +100,17 @@
                     <a class="dropdown-item" href="nitrogen.html">Liquid nitrogen</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="other.html">Other files</a>
+                    <div class="dropdown-divider mobile-only"></div>
+                    <a href="index.html" class="btn btn-outline-light mobile-only">Sign out</a>
                 </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Other</a>
+                <a class="nav-link" href="other.html">Other</a>
             </li>
         </ul>
     </div>
-    <a href="index.html" class="btn btn-outline-light">Sign out</a>
+    <a href="index.html" class="btn btn-outline-light large-only">Sign out</a>
 </nav>
 
 <!-- Full Page Intro -->
@@ -120,6 +142,7 @@
         <div class="row" align="center">
             <div class="col-sm my-5">
                 <a class="btn btn-lg btn-outline-light mx-1 my-1" href="#calendar">Calendar</a>
+                <a class="btn btn-lg btn-outline-light mx-1 my-1" href="order-list.jsp">Orders</a>
                 <a class="btn btn-lg btn-outline-light mx-1 my-1" href="#resources">Resources</a>
                 <a class="btn btn-lg btn-outline-light mx-1 my-1" href="#contacts">Contacts</a>
             </div>
@@ -207,10 +230,10 @@
             </div>
 
             <div class="col-sm" align="center">
-                <a href="antibodies.html">
+                <a href="other.html">
                     <figure class="figure-fluid border rounded-sm bg-light">
                         <img src="/images/chemicals.jpg" class="figure-img img-fluid rounded"
-                             alt="Liquid nitrogen">
+                             alt="Chemicals">
                         <figcaption class="figure-caption text-center font-weight-bold">Chemicals
                         </figcaption>
                     </figure>
@@ -231,7 +254,7 @@
                 <a href="other.html">
                     <figure class="figure-fluid border rounded-sm bg-light">
                         <img src="/images/etc.jpg" class="figure-img img-fluid rounded"
-                             alt="Contacts">
+                             alt="Other">
                         <figcaption class="figure-caption text-center font-weight-bold">Other</figcaption>
                     </figure>
                 </a>

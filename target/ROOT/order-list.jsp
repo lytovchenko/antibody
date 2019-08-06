@@ -30,24 +30,47 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+        @media (max-width: 7500px) {
+            .large-only {
+                display: none;
+            }
+
+            .mobile-only {
+                display: block;
+            }
+        }
+
+        @media (min-width: 750px) {
+            .large-only {
+                display: block;
+            }
+
+            .mobile-only {
+                display: none;
+            }
+        }
+    </style>
+
     <title>Orders</title>
+
 </head>
 
 <body class="bg-light">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark my-3">
-    <a class="navbar-brand" href="index.jsp">Home</a>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="home.html">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-
             <li class="nav-item">
                 <a class="nav-link" href="calendar.html">Calendars</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="orders.html">Orders</a>
+                <a class="nav-link" href="order-list.jsp">Orders</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -57,53 +80,122 @@
                     Resources
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="antibody-list.jsp">Antibodies</a>
+                    <a class="dropdown-item" href="antibodies-html.html">Antibodies</a>
                     <a class="dropdown-item" href="taqman.html">TaqMan probes</a>
                     <a class="dropdown-item" href="nitrogen.html">Liquid nitrogen</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="photos.html">Protocol book</a>
-                    <a class="dropdown-item" href="photos.html">Equipment manuals</a>
-                    <a class="dropdown-item" href="photos.html">Responsibility list</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="photos.html">Photos</a>
+                    <a class="dropdown-item" href="other.html">Other files</a>
+                    <div class="dropdown-divider mobile-only"></div>
+                    <a href="index.html" class="btn btn-outline-light mobile-only">Sign out</a>
                 </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Other</a>
+                <a class="nav-link" href="other.html">Other</a>
             </li>
         </ul>
     </div>
+    <a href="index.html" class="btn btn-outline-light large-only">Sign out</a>
 </nav>
 
-<div class="container  w-100 my-4 bg-light">
 
-    <h3 align="center">Place a new order</h3>
-    <table class="table bg-light table-sm">
-        <form class="form-inline" action="/neworder" method="get">
+<div class="container w-100 my-4 bg-light">
 
-
-            <tbody>
-
-            <tr>
-                <td><input type="text" class="form-control mb-2 mr-sm-2" placeholder="Person ordering"
-                           name="person"></td>
-                <td><input type="text" class="form-control mb-2 mr-sm-2" placeholder="Item" name="item"></td>
-                <td><input type="text" class="form-control mb-2 mr-sm-2" placeholder="Amount" name="amount"></td>
-                <td><input type="text" class="form-control mb-2 mr-sm-2" placeholder="Company" name="company"></td>
-                <td><input type="text" class="form-control mb-2 mr-sm-2" placeholder="Catalog #" name="catalog">
-                </td>
-                <td><input type="url" class="form-control mb-2 mr-sm-2" placeholder="URL" name="url"></td>
-                <td>
-                    <button type="submit" class="btn btn-outline-success mb-2">Order</button>
-                </td>
-            </tr>
-            </tbody>
-        </form>
-    </table>
-
+    <div class="large-only">
+        <h3 align="center">Place a new order</h3>
+        <table class="table bg-light table-sm large-only">
+            <form class="form-inline" action="/neworder" method="get">
+                <tbody>
+                <tr>
+                    <td><input type="text" class="form-control mb-2 mr-sm-2" placeholder="Person ordering"
+                               name="person"></td>
+                    <td><input type="text" class="form-control mb-2 mr-sm-2" placeholder="Item" name="item"></td>
+                    <td><input type="text" class="form-control mb-2 mr-sm-2" placeholder="Amount" name="amount"></td>
+                    <td><input type="text" class="form-control mb-2 mr-sm-2" placeholder="Company" name="company"></td>
+                    <td><input type="text" class="form-control mb-2 mr-sm-2" placeholder="Catalog #" name="catalog">
+                    </td>
+                    <td><input type="url" class="form-control mb-2 mr-sm-2" placeholder="URL" name="url"></td>
+                    <td>
+                        <button type="submit" class="btn btn-outline-success mb-2">Order</button>
+                    </td>
+                </tr>
+                </tbody>
+            </form>
+        </table>
+    </div>
 
     <h3 align="center">Pending requests</h3>
+
+    <!-- Button trigger modal -->
+    <div class="mobile-only">
+        <button class="btn btn-outline-success my-2" data-toggle="modal" data-target="#orderModal">
+            <i class="fa fa-plus"></i> New order
+        </button>
+        <br>
+        <!-- Modal -->
+        <div class="modal fade" id="orderModal" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Place new order</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="/neworder" method="get">
+                            <div class="form-group">
+                                <label for="person">Name</label>
+                                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Person ordering"
+                                       name="person" id="person">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="item">Item</label>
+                                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Item" name="item"
+                                       id="item">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="amount">Amount</label>
+                                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Amount" name="amount"
+                                       id="amount">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Company"
+                                       name="company" id="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="catalog">Catalog #</label>
+                                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Catalog #"
+                                       name="catalog" id="catalog">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="url">URL</label>
+                                <input type="url" class="form-control mb-2 mr-sm-2" placeholder="URL" name="url"
+                                       id="url">
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-success mb-2">Order now</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <table class="table table-bordered table-hover table-condensed bg-light table-sm table-striped">
         <thead class="thead-dark">
         <tr>
@@ -209,10 +301,11 @@
     </table>
 
 </div>
-</div>
-<footer class="pt-1 my-md-4 pt-md-1 border-top bg-dark">
-    <div class="row">
-        <div class="col-12 col-md">
+
+
+<footer class="pt-1 pt-md-1 border-top bg-dark">
+    <div class="row my-3">
+        <div class="col-sm-4">
             <a href="https://twitter.com/MolMet_KI?ref_src=twsrc%5Etfw" class="twitter-follow-button my-2"
                data-show-count="false"> Follow @MolMet_KI</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -222,22 +315,11 @@
                 molmet@mbb.ki.se</a><br>
             <a class="text-white-50 text-small"><i class="fa fa-phone"></i> +46-(0)8-524 830 39</a><br>
             <a href="https://goo.gl/maps/uCNK2s3mXGWnBdSt7" target="_blank" class="text-white-50 text-small"><i
-                    class="fa fa-map-o"></i> Map</a>
+                    class="fa fa-map-o"></i> Map <br></a>
+            <br>
         </div>
 
-        <div class="col-6 col-md">
-
-            <p class="text-white-50 text-small">
-                <strong>Delivery address:</strong> <br>
-                Division of Molecular Metabolism<br>
-                Biomedicum 9D <br>
-                Tomtebodav&#228;gen 16<br>
-                17165 Solna<br>
-                Sweden</p>
-
-        </div>
-
-        <div class="col-6 col-md">
+        <div class="col-sm-4">
 
             <p class="text-white-50 text-small">
                 <strong>Visiting address:</strong> <br>
@@ -246,10 +328,9 @@
                 Solnav&#228;gen 9<br>
                 17165 Solna<br>
                 Sweden</p>
-
         </div>
 
-        <div class="col-6 col-md">
+        <div class="col-sm-4">
             <ul class="list-unstyled">
                 <li><strong class="text-white-50 text-small">External links:</strong></li>
                 <li><a class="text-white-50 text-small"
@@ -270,7 +351,6 @@
                     group</a></li>
             </ul>
         </div>
-
     </div>
 </footer>
 

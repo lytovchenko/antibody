@@ -13,15 +13,14 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.jsp">Home</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="home.html">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-
             <li class="nav-item">
                 <a class="nav-link" href="calendar.html">Calendars</a>
             </li>
@@ -36,23 +35,22 @@
                     Resources
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="antibody-list.jsp">Antibodies</a>
+                    <a class="dropdown-item" href="antibodies-html.html">Antibodies</a>
                     <a class="dropdown-item" href="taqman.html">TaqMan probes</a>
                     <a class="dropdown-item" href="nitrogen.html">Liquid nitrogen</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="photos.html">Protocol book</a>
-                    <a class="dropdown-item" href="photos.html">Equipment manuals</a>
-                    <a class="dropdown-item" href="photos.html">Responsibility list</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="photos.html">Photos</a>
+                    <a class="dropdown-item" href="other.html">Other files</a>
+                    <div class="dropdown-divider mobile-only"></div>
+                    <a href="index.html" class="btn btn-outline-light mobile-only">Sign out</a>
                 </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Other</a>
+                <a class="nav-link" href="other.html">Other</a>
             </li>
         </ul>
     </div>
+    <a href="index.html" class="btn btn-outline-light large-only">Sign out</a>
 </nav>
 
 
@@ -73,9 +71,9 @@
 
 </DIV>
 
-<footer class="pt-1 my-md-4 pt-md-1 border-top bg-dark">
-    <div class="row">
-        <div class="col-12 col-md">
+<footer class="pt-1 pt-md-1 border-top bg-dark">
+    <div class="row my-3">
+        <div class="col-sm-4">
             <a href="https://twitter.com/MolMet_KI?ref_src=twsrc%5Etfw" class="twitter-follow-button my-2"
                data-show-count="false"> Follow @MolMet_KI</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -85,22 +83,11 @@
                 molmet@mbb.ki.se</a><br>
             <a class="text-white-50 text-small"><i class="fa fa-phone"></i> +46-(0)8-524 830 39</a><br>
             <a href="https://goo.gl/maps/uCNK2s3mXGWnBdSt7" target="_blank" class="text-white-50 text-small"><i
-                    class="fa fa-map-o"></i> Map</a>
+                    class="fa fa-map-o"></i> Map <br></a>
+            <br>
         </div>
 
-        <div class="col-6 col-md">
-
-            <p class="text-white-50 text-small">
-                <strong>Delivery address:</strong> <br>
-                Division of Molecular Metabolism<br>
-                Biomedicum 9D <br>
-                Tomtebodav&#228;gen 16<br>
-                17165 Solna<br>
-                Sweden</p>
-
-        </div>
-
-        <div class="col-6 col-md">
+        <div class="col-sm-4">
 
             <p class="text-white-50 text-small">
                 <strong>Visiting address:</strong> <br>
@@ -109,10 +96,9 @@
                 Solnav&#228;gen 9<br>
                 17165 Solna<br>
                 Sweden</p>
-
         </div>
 
-        <div class="col-6 col-md">
+        <div class="col-sm-4">
             <ul class="list-unstyled">
                 <li><strong class="text-white-50 text-small">External links:</strong></li>
                 <li><a class="text-white-50 text-small"
@@ -133,7 +119,6 @@
                     group</a></li>
             </ul>
         </div>
-
     </div>
 </footer>
 
