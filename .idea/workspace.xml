@@ -6,30 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f94086fe-5c51-4c59-aa86-b03320ee01c3" name="Default Changelist" comment="Version 01.08.2019">
+    <list default="true" id="f94086fe-5c51-4c59-aa86-b03320ee01c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/JdbcUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/OrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/OrdersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/antibodies-html.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/antibodies-html.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/antibody-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/antibody-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/new-antibody.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/new-antibody.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/new-order.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nitrogen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nitrogen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/order-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/order-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/other.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/other.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/taqman.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/taqman.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ROOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/antibodies-html.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ROOT/antibodies-html.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/antibody-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ROOT/antibody-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ROOT/calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/new-antibody.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ROOT/new-antibody.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/new-order.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/nitrogen.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ROOT/nitrogen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/order-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ROOT/order-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/taqman.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ROOT/taqman.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -115,9 +96,9 @@
     <session id="-2137910230">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="293" />
+          <entry key="project.closed" value="294" />
           <entry key="project.open.time.10" value="3" />
-          <entry key="project.open.time.11" value="8" />
+          <entry key="project.open.time.11" value="9" />
           <entry key="project.open.time.12" value="20" />
           <entry key="project.open.time.13" value="22" />
           <entry key="project.open.time.14" value="11" />
@@ -149,7 +130,7 @@
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.74" value="1" />
-          <entry key="project.opened" value="296" />
+          <entry key="project.opened" value="297" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -158,7 +139,7 @@
           <entry key="JdbcUtil" value="1" />
           <entry key="css" value="1" />
           <entry key="html" value="123" />
-          <entry key="java" value="90" />
+          <entry key="java" value="93" />
           <entry key="jpg" value="1" />
           <entry key="jsp" value="73" />
           <entry key="list" value="8" />
@@ -174,7 +155,7 @@
           <entry key="Database Element" value="16" />
           <entry key="HTML" value="123" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="90" />
+          <entry key="JAVA" value="93" />
           <entry key="JSP" value="73" />
           <entry key="SQL" value="18" />
           <entry key="Scratch" value="21" />
@@ -187,19 +168,19 @@
           <entry key="cell" value="13" />
           <entry key="dummy" value="10" />
           <entry key="html" value="2626" />
-          <entry key="java" value="3220" />
-          <entry key="jsp" value="7755" />
+          <entry key="java" value="3224" />
+          <entry key="jsp" value="7768" />
           <entry key="sql" value="1807" />
-          <entry key="txt" value="123" />
+          <entry key="txt" value="209" />
           <entry key="xml" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="2626" />
-          <entry key="JAVA" value="3220" />
-          <entry key="JSP" value="7755" />
-          <entry key="PLAIN_TEXT" value="133" />
+          <entry key="JAVA" value="3224" />
+          <entry key="JSP" value="7768" />
+          <entry key="PLAIN_TEXT" value="219" />
           <entry key="SQL" value="11" />
           <entry key="Scratch" value="1809" />
           <entry key="XML" value="63" />
@@ -212,11 +193,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/order-list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="193" column="18" lean-forward="true" selection-start-line="193" selection-start-column="18" selection-end-line="193" selection-end-column="18" />
+            <state relative-caret-position="302">
+              <caret line="194" column="18" lean-forward="true" selection-start-line="194" selection-start-column="18" selection-end-line="194" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/JdbcUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -271,7 +261,6 @@
         <option value="$PROJECT_DIR$/src/main/java/servlets/NewOrderServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/Dao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/AntibodyDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/reorder.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/markAsOrdered.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
@@ -298,13 +287,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/new-antibody.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/new-order.html" />
         <option value="$PROJECT_DIR$/src/main/java/dao/OrdersDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/JdbcUtil.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/antibodies-html.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/calendar.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/nitrogen.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/other.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/taqman.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/order-list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/services/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/JdbcUtil.java" />
       </list>
     </option>
   </component>
@@ -362,6 +352,7 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -430,7 +421,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -939,7 +929,8 @@
       <workItem from="1565090870725" duration="1618000" />
       <workItem from="1565092876466" duration="1562000" />
       <workItem from="1565094822774" duration="744000" />
-      <workItem from="1565101221932" duration="90000" />
+      <workItem from="1565101221932" duration="219000" />
+      <workItem from="1565101557727" duration="260000" />
     </task>
     <task id="LOCAL-00001">
       <created>1564665754200</created>
@@ -1011,17 +1002,24 @@
       <option name="project" value="LOCAL" />
       <updated>1565089346566</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Version 06.08.2019 - everything works, modal button changed (compared to the previous version).">
+      <created>1565101424787</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1565101424788</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279872000" />
+    <option name="totallyTimeSpent" value="280261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="722" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4871795" visible="true" weight="0.34168014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4871795" visible="true" weight="0.3473344" />
       <window_info id="Structure" order="1" sideWeight="0.51282054" side_tool="true" weight="0.26655897" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1031,7 +1029,7 @@
       <window_info id="Web" order="7" sideWeight="0.51282054" side_tool="true" weight="0.26655897" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919224" weight="0.32753164" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.3168" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.31587303" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39903846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1126,7 +1124,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Version 01.08.2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 01.08.2019" />
+    <MESSAGE value="Version 06.08.2019 - everything works, modal button changed (compared to the previous version)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 06.08.2019 - everything works, modal button changed (compared to the previous version)." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1330,13 +1329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/deleteAntibody.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1367,20 +1359,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/JdbcUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/OrdersDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="105" column="50" selection-start-line="105" selection-start-column="50" selection-end-line="105" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1430,10 +1408,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="10" column="117" selection-start-line="10" selection-start-column="117" selection-end-line="10" selection-end-column="117" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1446,8 +1420,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/order-list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="193" column="18" lean-forward="true" selection-start-line="193" selection-start-column="18" selection-end-line="193" selection-end-column="18" />
+        <state relative-caret-position="302">
+          <caret line="194" column="18" lean-forward="true" selection-start-line="194" selection-start-column="18" selection-end-line="194" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/OrdersDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="105" column="50" selection-start-line="105" selection-start-column="50" selection-end-line="105" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/JdbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>

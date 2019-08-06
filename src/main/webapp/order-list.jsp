@@ -187,7 +187,8 @@
                             </div>
 
                             <button type="submit" class="btn btn-outline-success mb-2">Order now</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-secondary mb-2" data-dismiss="modal">Close
+                            </button>
                         </form>
                     </div>
                 </div>

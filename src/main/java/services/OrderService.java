@@ -16,7 +16,6 @@ public class OrderService {
         List<Order> orderList = null;
         try {
             orderList = ordersDao.getAll();
-            System.out.println(orderList.toString());
         } catch (DaoException e) {
             e.printStackTrace();
         }
