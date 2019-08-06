@@ -33,6 +33,29 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+
+        @media (max-width: 1000px) {
+            .large-only {
+                display: none;
+            }
+
+            .mobile-only {
+                display: block;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .large-only {
+                display: block;
+            }
+
+            .mobile-only {
+                display: none;
+            }
+        }
+    </style>
+
     <title>Antibodies</title>
 </head>
 
@@ -65,13 +88,14 @@
                     <a class="dropdown-item" href="nitrogen.html">Liquid nitrogen</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="other.html">Other files</a>
-                    <div class="dropdown-divider mobile-only"></div>
-                    <a href="index.html" class="btn btn-outline-light mobile-only">Sign out</a>
                 </div>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="other.html">Other</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link mobile-only">Sign out</a>
             </li>
         </ul>
     </div>

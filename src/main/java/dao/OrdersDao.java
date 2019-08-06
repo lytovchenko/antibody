@@ -94,7 +94,8 @@ public class OrdersDao extends AbstractDao<Order, Integer> {
 
                 Order order = new Order();
                 order.setId(rs.getInt("id"));
-                order.setDateRequested(rs.getString("id"));
+                String dateReq = (rs.getString("date_requested"));
+                order.setDateRequested(dateReq.substring(0, Math.min(dateReq.length(), 10)));
                 order.setPerson(rs.getString("person"));
                 order.setItem(rs.getString("item"));
                 order.setAmount(rs.getString("amount"));

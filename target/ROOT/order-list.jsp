@@ -31,7 +31,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        @media (max-width: 7500px) {
+
+        @media (max-width: 1000px) {
             .large-only {
                 display: none;
             }
@@ -41,7 +42,7 @@
             }
         }
 
-        @media (min-width: 750px) {
+        @media (min-width: 1000px) {
             .large-only {
                 display: block;
             }
@@ -85,13 +86,14 @@
                     <a class="dropdown-item" href="nitrogen.html">Liquid nitrogen</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="other.html">Other files</a>
-                    <div class="dropdown-divider mobile-only"></div>
-                    <a href="index.html" class="btn btn-outline-light mobile-only">Sign out</a>
                 </div>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="other.html">Other</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link mobile-only">Sign out</a>
             </li>
         </ul>
     </div>
@@ -185,11 +187,9 @@
                             </div>
 
                             <button type="submit" class="btn btn-outline-success mb-2">Order now</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </form>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -216,7 +216,7 @@
         <c:forEach items="${orderList}" var="order">
             <c:if test="${! order.ordered}">
                 <tr>
-                    <th scope="row">${order.dateOrdered}</th>
+                    <td>${order.dateRequested}</td>
                     <td>${order.person}</td>
                     <td>${order.item}</td>
                     <td>${order.amount}</td>
@@ -250,7 +250,7 @@
     <table class="table table-bordered table-hover table-condensed bg-light table-sm table-striped">
         <thead class="thead-dark">
         <tr>
-            <th scope="col">Ordered</th>
+            <th scope="col">Ordered on</th>
             <th scope="col">Person</th>
             <th scope="col">Item</th>
             <th scope="col">Amount</th>
@@ -265,10 +265,9 @@
         <tbody>
 
         <c:forEach items="${orderList}" var="order">
-
             <c:if test="${order.ordered}">
                 <tr>
-                    <th scope="row">${order.dateRequested}</th>
+                    <td>${order.dateRequested}</td>
                     <td>${order.person}</td>
                     <td>${order.item}</td>
                     <td>${order.amount}</td>
