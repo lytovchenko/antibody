@@ -57,6 +57,7 @@
     </style>
 
     <title>Antibodies</title>
+
 </head>
 
 <body class="bg-light">
@@ -102,17 +103,32 @@
     <a href="index.html" class="btn btn-outline-light large-only">Sign out</a>
 </nav>
 
+
 <div class="container  w-100 my-4 bg-light">
 
-    <h3 align="center">Antibody list</h3>
+    <h3 align="center" id="page_title">Antibody list</h3>
+    <p align="center" id="count"></p>
+
+    <form class="form-inline" name="search_form">
+        <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Antigen" name="search">
+        <button class="btn btn-outline-primary mb-2" onclick="func_search(search_form.search.value); return false;">
+            Search
+        </button>
+        <button class="btn btn-outline-primary mb-2" onclick="func_color(); return false;">
+            COlor
+        </button>
+        <a href="antibody-list.jsp" class="btn btn-outline-secondary mb-2 mr-sm-2 mx-1">Reset</a>
+    </form>
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-outline-success my-3" data-toggle="modal" data-target="#exampleModal">
+    <button type="button" class="btn btn-outline-success mb-2" data-toggle="modal"
+            data-target="#exampleModal">
         <i class="fa fa-plus"></i> New antibody
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
          aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -152,7 +168,8 @@
 
                         <div class="form-group">
                             <label for="catalogInput">Catalog No</label>
-                            <input type="text" class="form-control" id="catalogInput" placeholder="Catalog #"
+                            <input type="text" class="form-control" id="catalogInput"
+                                   placeholder="Catalog #"
                                    name="catalog">
                         </div>
 
@@ -196,7 +213,8 @@
 
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Comment</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" name="comment" rows="3"
+                            <textarea class="form-control" id="exampleFormControlTextarea1" name="comment"
+                                      rows="3"
                                       placeholder="Please specify any relevant details here"></textarea>
                         </div>
                         <input class="btn btn-danger" type="submit" value="Submit">
@@ -208,8 +226,7 @@
         </div>
     </div>
 
-
-    <table class="table table-bordered table-hover table-condensed bg-light table-sm table-striped">
+    <table id="anti_table" class="table table-bordered table-hover table-condensed bg-light table-sm table-striped">
         <thead class="thead-dark">
         <tr>
             <th scope="col">#</th>
@@ -228,11 +245,11 @@
         <c:forEach items="${antibodyList}" var="antibody">
             <tr>
                 <th scope="row">${antibody.id}</th>
-                <td>${antibody.antigen}</td>
+                <td id="anti">${antibody.antigen}</td>
                 <td>${antibody.produced}</td>
                 <td>${antibody.company}</td>
                 <td>${antibody.catalog}</td>
-                <td>${antibody.location}</td>
+                <td id="location">${antibody.location}</td>
                 <td>${antibody.box}</td>
                 <td>${antibody.details}</td>
 
@@ -300,6 +317,42 @@
 </footer>
 
 <!-- Optional JavaScript -->
+<script type="text/javascript">
+
+    function func_search(text) {
+        var arr_rows = document.getElementById('anti_table').getElementsByTagName('tr');
+        var count = 0;
+
+        if (text) {
+            for (var i = 1; i < arr_rows.length; i++) {
+
+                if (!arr_rows[i].childNodes[3].innerHTML.toUpperCase().includes(text.toUpperCase())) {
+                    arr_rows[i].setAttribute("style", "display:none");
+                } else {
+                    count++;
+                }
+
+            }
+            document.getElementById("page_title").innerHTML = "Search result";
+            document.getElementById("count").innerHTML = "Total number of antibodies: " + (arr_rows.length - 1) + "<br>" + "Found containing \"" + text + "\": " + count;
+
+        }
+    }
+
+    function func_color() {
+        var arr_rows = document.getElementById('anti_table').getElementsByTagName('tr');
+
+        for (var i = 0; i < arr_rows.length; i++) {
+
+            if (arr_rows[i].childNodes[11].innerHTML.includes("4")) {
+                arr_rows[i].setAttribute("style", "background-color:#f9fae8");
+            } else {
+                arr_rows[i].setAttribute("style", "background-color:#e8effa");
+            }
+        }
+    }
+
+</script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
