@@ -84,7 +84,7 @@
                     Resources
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="antibodies-html.html">Antibodies</a>
+                    <a class="dropdown-item" href="antibody-list.jsp">Antibodies</a>
                     <a class="dropdown-item" href="taqman.html">TaqMan probes</a>
                     <a class="dropdown-item" href="nitrogen.html">Liquid nitrogen</a>
                     <div class="dropdown-divider"></div>
@@ -106,16 +106,15 @@
 
 <div class="container  w-100 my-4 bg-light">
 
-    <h3 align="center" id="page_title">Antibody list</h3>
+    <h2 align="center" id="page_title">Antibody list</h2>
     <p align="center" id="count"></p>
+
+    <a href="antibodies-html.html" class="btn btn-outline-secondary mb-2 mr-sm-2 mx-1">Spreadsheet view</a>
 
     <form class="form-inline" name="search_form">
         <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Antigen" name="search">
         <button class="btn btn-outline-primary mb-2" onclick="func_search(search_form.search.value); return false;">
             Search
-        </button>
-        <button class="btn btn-outline-primary mb-2" onclick="func_color(); return false;">
-            COlor
         </button>
         <a href="antibody-list.jsp" class="btn btn-outline-secondary mb-2 mr-sm-2 mx-1">Reset</a>
     </form>
@@ -351,6 +350,8 @@
             }
         }
     }
+
+    func_color();
 
 </script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
