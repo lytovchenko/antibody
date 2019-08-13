@@ -33,6 +33,12 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
     <style>
 
         @media (max-width: 1000px) {
@@ -55,6 +61,7 @@
             }
         }
     </style>
+
 
     <title>Antibodies</title>
 
@@ -105,19 +112,6 @@
 
 
 <div class="container  w-100 my-4 bg-light">
-
-    <h2 align="center" id="page_title">Antibody list</h2>
-    <p align="center" id="count"></p>
-
-    <a href="antibodies-html.html" class="btn btn-outline-secondary mb-2 mr-sm-2 mx-1">Spreadsheet view</a>
-
-    <form class="form-inline" name="search_form">
-        <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Antigen" name="search">
-        <button class="btn btn-outline-primary mb-2" onclick="func_search(search_form.search.value); return false;">
-            Search
-        </button>
-        <a href="antibody-list.jsp" class="btn btn-outline-secondary mb-2 mr-sm-2 mx-1">Reset</a>
-    </form>
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-outline-success mb-2" data-toggle="modal"
@@ -225,6 +219,25 @@
         </div>
     </div>
 
+    <h2 align="center" id="page_title">Antibody list</h2>
+    <p align="center" id="count"></p>
+
+
+    <div class="container">
+
+        <div class="row">
+            <form class="form-inline" name="search_form">
+                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Antigen" name="search">
+                <button class="btn btn-outline-primary mb-2"
+                        onclick="func_search(search_form.search.value); return false;">
+                    Search
+                </button>
+                <a href="antibody-list.jsp" class="btn btn-outline-secondary mb-2 mr-sm-2 mx-1">Reset</a>
+            </form>
+
+        </div>
+    </div>
+
     <table id="anti_table" class="table table-bordered table-hover table-condensed bg-light table-sm table-striped">
         <thead class="thead-dark">
         <tr>
@@ -262,6 +275,8 @@
     <button type="button" class="btn btn-outline-success my-3" data-toggle="modal" data-target="#exampleModal">
         <i class="fa fa-plus"></i> New antibody
     </button>
+<br>
+    <a href="antibodies-html.html" class="btn btn-outline-secondary my-3">Spreadsheet view</a>
 </div>
 
 <footer class="pt-1 pt-md-1 border-top bg-dark">
